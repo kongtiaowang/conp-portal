@@ -1104,3 +1104,8 @@ def _get_repo_analytics(app, repo):
                 }
 
     return daily_stat_dict
+
+def init_app(app):
+    """Register CLI commands with the application."""
+    pass
+

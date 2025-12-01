@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  conp:
+    build: .
+    container_name: conp-portal
+    ports:
+      - "5001:5000"
+    environment:
+      FLASK_ENV: development
+      DATABASE_URL: sqlite:////app/instance/conp.db
+      FLASK_APP: app.py
+      DATASET_CACHE_PATH: /app/conp-dataset   # ← 覆盖 config.py 的默认路径
+      DATA_PATH: /app/conp-dataset           # ← 让 portal 直接读取 conp-dataset
+    volumes:
+      - .:/app
+      - conp_data:/app/instance
+      - ../conp-dataset:/app/conp-dataset  # ← 正确挂载 conp-dataset
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  conp_data:
+

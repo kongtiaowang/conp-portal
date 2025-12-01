@@ -31,26 +31,27 @@ class Config(object):
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     MAIL_DEFAULT_SENDER = '"CONP-PCNO Portal" <shawntbrown@gmail.com>'
-    ADMINS = [os.environ.get('ADMIN_EMAIL')] or ['conp-test@mailinator.com']
+    ADMINS = [os.environ.get('ADMIN_EMAIL')] or ['admin@gmail.com']
     LOG_TO_STDOUT = True
     TEMPLATES_AUTO_RELOAD = True
-
+    USER_PASSLIB_CRYPTCONTEXT_SCHEMES = ['pbkdf2_sha512']
+    USER_PASSLIB_CRYPTCONTEXT_DEPRECATED = ['auto']
     # Flask-User Settings
     USER_APP_NAME = "CONP-PCNO Data Portal"
     USER_ENABLE_CHANGE_PASSWORD = True
     USER_ENABLE_CHANGE_USERNAME = False
-    USER_ENABLE_CONFIFM_EMAIL = True
+    USER_ENABLE_CONFIRM_EMAIL = True
     USER_ENABLE_FORGOT_PASSWORD = True
-    USER_ENABLE_EMAIL = True
+    USER_ENABLE_EMAIL = False
     USER_ENABLE_REGISTRATION = True
     USER_REQUIRE_RETYPE_PASSWORD = True
     USER_ENABLE_USERNAME = False
     USER_EMAIL_SENDER = USER_APP_NAME
-    USER_EMAIL_SENDER_EMAIL = ADMINS[0]
+    USER_EMAIL_SENDER_EMAIL = "noreply@conp.ca"
     USER_AFTER_LOGIN_ENDPOINT = "main.index"
     USER_AFTER_LOGOUT_ENDPOINT = "main.index"
     USER_AFTER_REGISTER_ENDPOINT = "auth.confirmation_sent"
-    USER_ALLOW_LOGIN_WITHOUT_CONFIRMED_EMAIL = False
+    USER_ALLOW_LOGIN_WITHOUT_CONFIRMED_EMAIL = True
     USER_AUTO_LOGIN_AFTER_REGISTER = False
     USER_AUTO_LOGIN_AFTER_CONFIRM = True
     USER_LOGIN_TEMPLATE = "auth/flask_user/login.html"

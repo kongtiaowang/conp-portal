@@ -5,7 +5,7 @@ Defines forms needed for Flask-User login
 from flask_user.forms import RegisterForm
 from flask_user import UserManager
 from wtforms import StringField, BooleanField
-from wtforms.ext.sqlalchemy.fields import QuerySelectField
+from wtforms_alchemy.fields import QuerySelectField
 from wtforms.validators import DataRequired
 from app.utils.form_utils import possible_affiliation_types
 

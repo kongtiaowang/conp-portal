@@ -78,6 +78,9 @@ def create_app(config_settings=None):
     from app.auth.forms import CustomUserManager
     user_manager = CustomUserManager(app, db, User)
 
+    from app import cli  # <- 添加这一行
+    cli.register(app)
+
     from app.webhooks import webhooks_bp
     csrf_protect.exempt(webhooks_bp)
     app.register_blueprint(webhooks_bp)
