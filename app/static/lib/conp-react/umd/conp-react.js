@@ -30078,7 +30078,7 @@ var DataTableContainer_DataTableContainer = function DataTableContainer(_ref) {
     window.history.replaceState(null, null, pathname + "?" + queryString);
   }, [query]);
   var fetchCbrainIds = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
       var url, res, parsed;
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
@@ -30137,7 +30137,7 @@ var DataTableContainer_DataTableContainer = function DataTableContainer(_ref) {
     fetchCbrainIds();
   }, []);
   var fetchElements = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
       var url, res, parsed;
       return _regeneratorRuntime().wrap(function _callee2$(_context2) {
         while (1) switch (_context2.prev = _context2.next) {
@@ -37811,7 +37811,7 @@ var DownloadModalWindowElement_DownloadModalWindowElement = function DownloadMod
   var close = function close(event) {
     $("#downloadModal").modal("hide");
   };
-  return react_dom["createPortal"]( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+  return react_dom["createPortal"](/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
     className: "modal-content"
   }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
     className: "modal-body"
@@ -37886,7 +37886,7 @@ var CbrainModalDataset_CbrainModalDataset = function CbrainModalDataset(props) {
   Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"])(function () {
     $("#cbrainModal").modal("handleUpdate");
   });
-  return react_dom["createPortal"]( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", null, "You're about to load ", /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("strong", null, title), " on CBRAIN. Please select a pipeline to process this dataset (or \"None\" to load only the dataset)."), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", null, "Note that not all pipelines are compatible with all datasets."), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", null, "Please ensure you're", " ", /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("a", {
+  return react_dom["createPortal"](/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", null, "You're about to load ", /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("strong", null, title), " on CBRAIN. Please select a pipeline to process this dataset (or \"None\" to load only the dataset)."), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", null, "Note that not all pipelines are compatible with all datasets."), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", null, "Please ensure you're", " ", /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("a", {
     href: "https://portal.cbrain.mcgill.ca",
     target: "_blank",
     rel: "noreferrer"
@@ -37959,7 +37959,7 @@ var DatasetElement_DatasetElement = function DatasetElement(props) {
   var authIcons = [];
   switch (element.authorizations) {
     case "restricted":
-      authIcons.push( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+      authIcons.push(/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
         style: {
           color: "#013220",
           fontSize: "13px",
@@ -37975,7 +37975,7 @@ var DatasetElement_DatasetElement = function DatasetElement(props) {
     case "private":
     case "registered":
     case "controlled":
-      authIcons.push( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+      authIcons.push(/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
         style: {
           color: "#013220",
           fontSize: "13px",
@@ -38277,7 +38277,7 @@ var CbrainModalPipeline_CbrainModalPipeline = function CbrainModalPipeline(props
   Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"])(function () {
     $("#cbrainModal").modal("handleUpdate");
   });
-  return react_dom["createPortal"]( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", null, "You're about to launch ", /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("strong", null, title), " on CBRAIN. Please select a dataset to process with this pipeline (or \"None\" to load only the pipeline)."), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", null, "Note that not all pipelines are compatible with all datasets."), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", null, "Please ensure you're", " ", /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("a", {
+  return react_dom["createPortal"](/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", null, "You're about to launch ", /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("strong", null, title), " on CBRAIN. Please select a dataset to process with this pipeline (or \"None\" to load only the pipeline)."), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", null, "Note that not all pipelines are compatible with all datasets."), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", null, "Please ensure you're", " ", /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("a", {
     href: "https://portal.cbrain.mcgill.ca",
     target: "_blank",
     rel: "noreferrer"
@@ -38546,7 +38546,7 @@ var ElementContainer_ElementContainer = function ElementContainer(_ref) {
     cbrainIdsState = _useState[0],
     setCbrainIdsState = _useState[1];
   var fetchCbrainIds = /*#__PURE__*/function () {
-    var _ref2 = ElementContainer_asyncToGenerator( /*#__PURE__*/ElementContainer_regeneratorRuntime().mark(function _callee() {
+    var _ref2 = ElementContainer_asyncToGenerator(/*#__PURE__*/ElementContainer_regeneratorRuntime().mark(function _callee() {
       var url, res, parsed;
       return ElementContainer_regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
@@ -38681,7 +38681,7 @@ var TotalDatasetsPipelines_TotalDatasetsPipelines = function TotalDatasetsPipeli
     fetchChartData();
   }, []);
   var fetchChartData = /*#__PURE__*/function () {
-    var _ref = TotalDatasetsPipelines_asyncToGenerator( /*#__PURE__*/TotalDatasetsPipelines_regeneratorRuntime().mark(function _callee() {
+    var _ref = TotalDatasetsPipelines_asyncToGenerator(/*#__PURE__*/TotalDatasetsPipelines_regeneratorRuntime().mark(function _callee() {
       return TotalDatasetsPipelines_regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -38972,7 +38972,7 @@ var DatasetModalities_DatasetModalities = function DatasetModalities(props) {
     fetchChartData();
   }, []);
   var fetchChartData = /*#__PURE__*/function () {
-    var _ref = DatasetModalities_asyncToGenerator( /*#__PURE__*/DatasetModalities_regeneratorRuntime().mark(function _callee() {
+    var _ref = DatasetModalities_asyncToGenerator(/*#__PURE__*/DatasetModalities_regeneratorRuntime().mark(function _callee() {
       return DatasetModalities_regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -39161,7 +39161,7 @@ var PipelineTags_PipelineTags = function PipelineTags(props) {
     fetchChartData();
   }, []);
   var fetchChartData = /*#__PURE__*/function () {
-    var _ref = PipelineTags_asyncToGenerator( /*#__PURE__*/PipelineTags_regeneratorRuntime().mark(function _callee() {
+    var _ref = PipelineTags_asyncToGenerator(/*#__PURE__*/PipelineTags_regeneratorRuntime().mark(function _callee() {
       return PipelineTags_regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -39349,7 +39349,7 @@ var DailyVisitors_DailyVisitors = function DailyVisitors(props) {
     fetchChartData();
   }, []);
   var fetchChartData = /*#__PURE__*/function () {
-    var _ref = DailyVisitors_asyncToGenerator( /*#__PURE__*/DailyVisitors_regeneratorRuntime().mark(function _callee() {
+    var _ref = DailyVisitors_asyncToGenerator(/*#__PURE__*/DailyVisitors_regeneratorRuntime().mark(function _callee() {
       return DailyVisitors_regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -39485,7 +39485,7 @@ var DatasetPageViews_DatasetPageViews = function DatasetPageViews(props) {
     fetchChartData();
   }, []);
   var fetchChartData = /*#__PURE__*/function () {
-    var _ref = DatasetPageViews_asyncToGenerator( /*#__PURE__*/DatasetPageViews_regeneratorRuntime().mark(function _callee() {
+    var _ref = DatasetPageViews_asyncToGenerator(/*#__PURE__*/DatasetPageViews_regeneratorRuntime().mark(function _callee() {
       return DatasetPageViews_regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -39602,7 +39602,7 @@ var PipelinePageViews_PipelinePageViews = function PipelinePageViews(props) {
     fetchChartData();
   }, []);
   var fetchChartData = /*#__PURE__*/function () {
-    var _ref = PipelinePageViews_asyncToGenerator( /*#__PURE__*/PipelinePageViews_regeneratorRuntime().mark(function _callee() {
+    var _ref = PipelinePageViews_asyncToGenerator(/*#__PURE__*/PipelinePageViews_regeneratorRuntime().mark(function _callee() {
       return PipelinePageViews_regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -39719,7 +39719,7 @@ var Keywords_Keywords = function Keywords(props) {
     fetchChartData();
   }, []);
   var fetchChartData = /*#__PURE__*/function () {
-    var _ref = Keywords_asyncToGenerator( /*#__PURE__*/Keywords_regeneratorRuntime().mark(function _callee() {
+    var _ref = Keywords_asyncToGenerator(/*#__PURE__*/Keywords_regeneratorRuntime().mark(function _callee() {
       return Keywords_regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -134633,7 +134633,7 @@ function setCacheAdd(value) {
  * @name has
  * @memberOf SetCache
  * @param {*} value The value to search for.
- * @returns {number} Returns `true` if `value` is found, else `false`.
+ * @returns {boolean} Returns `true` if `value` is found, else `false`.
  */
 function setCacheHas(value) {
   return this.__data__.has(value);
